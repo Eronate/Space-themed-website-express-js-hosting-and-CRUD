@@ -1,0 +1,45 @@
+@font-face {
+    font-family: eotg;
+    src: url(eotg.otf);
+}
+
+body{
+    background: url("seamless.jpg");
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+.header
+{
+margin-top: 10px;
+display: grid;
+width: 1fr;
+}
+.header_content
+{
+justify-self: center;
+align-self: center;
+font-family: eotg;
+font-size: 40px;
+color: rgb(235, 237, 240);
+text-shadow: 2px 8px 30px #000066;
+height: 70px;
+}
+.background_header
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(1, 15, 19, 0.8);
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+}
+
+.background_body
+{
+    margin: 200px 20px 20px 20px;
+    background-color: rgba(1, 15, 19, 0.8);
+    width: auto;
+    height: 400px;
+}

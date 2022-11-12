@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'eotg';
+    src: url(picturesNfonts/eotg.otf);
+}
+
+@font-face{
+    font-family: 'Creme';  
+    src: url(picturesNfonts/Creme.otf);
+}
+@font-face{
+    font-family: 'Classy';  
+    src: url(picturesNfonts/ClassyScriptDemoRegular.otf);
+}
+
+#button1:hover
+{
+    transition: 0.5s;
+    background-color: aqua;
+}
+
+body{
+    background: url("picturesNfonts/seamless.jpg");
+    background-size: 550px 500px;
+    background-repeat: repeat;
+    margin: 0;
+    transition: 4s;
+}
+
+.header{
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(43, 38, 85, 0.8);
+    border-radius: 20px;
+    width: 60%;
+    min-height: 150px;
+    height: auto;
+    outline: 2px dashed blue;
+}
+.paragrafheader
+{
+    font-family: eotg;
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px 40px #00d9ff;
+    
+}
+.navbar
+{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 40px;
+    min-height: 50px;
+    height: auto;
+    background-color:rgba(43, 38, 85);
+    box-shadow: 10px 10px 16px #00d9ff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbarbutton
+{
+    font-size: 3vh;
+    color: white;
+    font-family: Arial;
+}
+.cover
+{
+margin-top: 40px;
+width: 100%;
+height: min-content;
+background-color: rgba(0,0,0,0.8);
+border-radius: 10px;
+}
+.grid
+{
+display: grid;
+padding: 20px;
+grid-template-columns: 1fr 1fr;
+grid-auto-rows: min-content;
+column-gap: 20px;
+}
+.card
+{
+  box-shadow: 10px 10px 30px rgb(48, 44, 44);
+  background-color: rgba(37, 34, 34, 0.733);
+  height: 400px;
+
+} 
+.card > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card > p
+{
+    padding: 20px;
+    font-size: 2vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgba(138, 177, 165, 0.829);
+    text-shadow: 0px 0px 2px #00d9ff;
+    text-align: justify;
+}
+
+.photoshoot_grid
+{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    padding: 16px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 150px;
+    gap: 10px;
+}
+.photo_2
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 2;
+    grid-column: span 2;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.photo_span_2x4
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 4;
+    grid-column: span 2;
+    border: 2px solid black;
+}
+
+.photo_span_2x6
+{
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 2;
+    grid-column: span 4;
+    border: 2px solid black;
+}
+
+.footer
+{
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 10px;
+    width: 100%;
+    height: min-content;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 8px solid blueviolet;
+
+}
+
+.footer >p
+{
+    color: white;
+    font-size: 3vh;
+    text-align: justify;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    
+}
+.navbar:hover{
+    background-color: rgb(56, 52, 100);
+}
+.navbar a
+{
+color:rgb(104, 101, 138);
+}
+.navbarbutton a:hover{
+    color: white;
+}
+.yourOwnPhotos{
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 10px; 
+    height: 400px; 
+    object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px rgb(23, 19, 57);
+    border-radius: 5%;
+}
+
+
+@media screen and (max-width: 768px) 
+{ 
+.grid
+{
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.photoshoot_grid
+{
+    grid-template-columns: 1fr;
+}
+.photo_2
+{
+    grid-column: span 1;
+}
+.photo_span_2x4
+{
+    grid-column: span 1;
+}
+.photo_span_2x6
+{
+    grid-column: span 1;
+}
+}

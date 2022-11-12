@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiluri.css">
+</head>
+
+
+<body>
+
+    <div class="header">
+        <div class="paragrafheader">Gallery of space</div>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <button type="button" id="button1">Change the font!</button>
+    </div>
+
+    <div class="navbar">
+        <div class="navbarbutton"><a href="siteulnou.html">Photos of
+                space with information next to them</a></div>
+        <div class="navbarbutton"><a href="pagina2.html">More photos</a></div>
+    </div>
+
+    <div class="cover">
+        <div class="grid">
+            <div class="card">
+                <img src="picturesNfonts/hubble.jpg" alt="Hubble" width=100% height=80%>
+            </div>
+            <div class="card" style="height:auto">
+                <p>Massive stars can blow bubbles. The featured image shows perhaps the most famous of all star-bubbles,
+                    NGC 7635, also known simply as The Bubble Nebula. Although it looks delicate, the 7-light-year
+                    diameter bubble offers evidence of violent processes at work.
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    Above and left of the Bubble's center is a hot, O-type star, several hundred thousand times more
+                    luminous and some 45-times more massive than the Sun. A fierce stellar wind and intense radiation
+                    from that star has blasted out the structure of glowing gas against denser material in a surrounding
+                    molecular cloud.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 90%; margin: auto">
+        <div class="cover">
+            <div class="grid">
+                <div class="card" style="height:auto">
+                    <p style="color: rgba(228, 127, 11, 0.719); text-shadow: 0px 0px 2px #be9f11; text-align: justify;">
+                        </br>
+
+                        Peculiar spiral galaxy Arp 78 is found within the boundaries of the head strong constellation
+                        Aries. Some 100 million light-years beyond the stars and nebulae of our Milky Way galaxy, the
+                        island universe is over 100,000 light-years across.
+                        </br>
+                        </br>
+                        </br>
+                        Also known as NGC 772, it sports a prominent, outer spiral arm in this detailed cosmic portrait
+                        from the large Gemini North telescope near the summit of Maunakea, Hawaii, planet Earth.
+                        Tracking along sweeping dust lanes and lined with young blue star clusters, Arp 78's spiral arm
+                        is likely pumped-up by galactic-scale gravitational tidal interactions
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="aries.jpg" alt="Aries" width=100% height=80%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="photoshoot_grid">
+        <img src="picturesNfonts/airglow.jpg" class="photo_2" alt="Airglow">
+        <img src="picturesNfonts/aurora.jpg" class="photo_2" alt="aurora">
+        <img src="picturesNfonts/lionorion.jpg" class="photo_span_2x4" alt="filament">
+        <img src="picturesNfonts/pillars.jpg" class="photo_2" alt="pillars">
+        <img src="picturesNfonts/multicrab.jpg" class="photo_2" alt="pillars">
+        <img src="picturesNfonts/observable_universe.jpg" class="photo_span_2x6" alt="observable_universe">
+        <img src="picturesNfonts/chameleon.jpg" class="photo_2" alt="pillars">
+    </div>
+
+    <div class="cover" style="margin-top: 100px; box-sizing: border-box; padding-bottom: 40px; padding-top: 10px; border-radius: 200px;">
+        <p style="font-family: eotg; font-size: 50px; color: white; text-shadow: 2px 2px 40px #00d9ff; text-align: center;"> Edit your own grid!
+            O_O </p>
+        <input type="text" style="font-size: 28px; margin-left: 40px; width: 600px; height: 40px;"
+            placeholder="Link to the image you want to add" id="inputAdd">
+        <button type="button" id="buttonAdd" style="margin-left: 10px; height: 30px">Add</button>
+
+        <input type="text" style="font-size: 20px; margin-left: 40px; width: 300px; height: 40px;"
+            placeholder="Delete the ___th image" id="inputDelete">
+        <button type="button" id="buttonDelete" style="margin-left: 10px; height: 30px">Delete</button>
+
+        <input type="text" style="font-size: 20px; margin-left: 40px; width: 200px; height: 40px;"
+            placeholder="Edit the ___th image" id="inputEdit1">
+        <input type="text" style="font-size: 20px; margin-left: 10px; width: 200px; height: 40px;"
+            placeholder="With this link:" id="inputEdit2">
+        <button type="button" id="buttonEdit" style="margin-left: 10px; height: 30px">Edit</button>
+
+    </div>
+    <div class="cover" style="margin-top: 100px; box-sizing: border-box; padding-bottom: 40px; padding-top: 10px; width: 90%; margin: 60px auto auto auto">
+    <div class="grid" id="gridByYou">
+
+    </div>
+    </div>
+    <div class="footer">
+        <p> The images used are each part of the 'Astronomy picture of the day' collection of NASA, where they try to
+            capture interesting parts of space and expose the bigger public to the beauties of space. </p>
+        <h1
+            style="font-family: eotg; font-size: 50px; color: white; text-shadow: 2px 2px 40px #00d9ff; text-align: center;">
+            THE END</h1>
+    </div>
+
+</body>
+
+</html>
+
+<script src="scripts.js">   </script>
